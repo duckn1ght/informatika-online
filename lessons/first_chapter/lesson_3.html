@@ -26,6 +26,17 @@
       </div>
     </div>
     <section class="lesson_container">
+      <h2>Разделы урока</h2>
+      <nav>
+        <ul>
+          <li class="nav_item" onclick="srcl('enter')">1.Введение</li>
+          <li class="nav_item" onclick="srcl('video')">2.Видео-урок</li>
+          <li class="nav_item" onclick="srcl('interface')">3.Интерфейс</li>
+          <li class="nav_item" onclick="srcl('test')">4.Тест</li>
+        </ul>
+      </nav>
+      <hr>
+      <h2 id="enter">Введение</h2>
       <p>
         <b>Microsoft PowerPoint</b> – Программа для создания презентаций,
         предназначенная для удобного оформления и демонстрации информации в
@@ -37,9 +48,11 @@
       </p>
 
       <img src="../../assets/pp.jpg" alt="" width="50%" onclick="openPopUpImage('../../assets/pp.jpg')" />
-
+      <hr>
+      <h2 id="video">Видео урок</h2>
+      <iframe src="https://www.youtube.com/embed/qsDJp0B44tQ?si=iTxUfwyKgJqVZ3w4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       <hr />
-
+      <h2 id="interface">Интерфейс</h2>
       <p>
         Интерфейс программы PowerPoint во многом повторяет интерфейс Word,
         поэтому в данной главе повторяющиеся элементы интерфейса (например
@@ -112,7 +125,7 @@
       <hr />
 
       <section class="test">
-        <p>Тест</p>
+        <h2 id="test">Тест</h2>
 
         <div class="test_container">
           <p>Какое расширение файлов используется для презентаций PowerPoint?</p>
@@ -209,9 +222,10 @@
       </section>
 
       <article class="lessons_link">
-        <a href="">Следующий урок. Microsoft PowerPoint</a>
+        <a href="./lesson_4.html">Следующий урок. Microsoft Excel</a>
       </article>
     </section>
+    <div id="up"><img src="../../assets/arrowUp.png" alt="Наверх"></div>
   </main>
   <script src="../../script.js"></script>
 </body>

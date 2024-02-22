@@ -129,10 +129,41 @@ label:hover {
   text-decoration: underline;
   cursor: pointer;
 }
+.nav_item {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.nav_item a{
+  text-decoration: underline;
+  cursor: pointer;
+}
+iframe {
+  width: 50vw;
+  height: 500px;
+}
+#up {
+  position: fixed;
+  bottom: 10px;
+  opacity: 0;
+  transition: all .3s;
+  cursor: pointer;
+  border-radius: 100%;
+  right: 15px;
+}
+#up img {
+  width: 32px;
+}
 @media (max-width: 900px) {
+  header h1{
+    font-size: 40px;
+  }
   .lesson_container {
     height: 100%;
     margin: 0 5vw;
+  }
+  iframe {
+    width: 90vw;
+    height: 200px;
   }
   .lesson_container img {
     width: 80vw;
@@ -143,7 +174,7 @@ label:hover {
   }
 }
 @media (max-width: 400px) {
-  header {
-    font-size: 20px;
+  header h1{
+    font-size: 38px;
   }
 }

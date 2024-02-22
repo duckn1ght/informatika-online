@@ -14,7 +14,7 @@
 
 <body>
   <header>
-    <div class="floating_buttons">
+    <div class="floating_buttons" id="start">
       <a href="../../index.html">Вернуться на главную страницу</a>
     </div>
     <h1>Microsoft Word</h1>
@@ -26,6 +26,17 @@
       </div>
     </div>
     <section class="lesson_container">
+      <h2>Разделы урока</h2>
+      <nav>
+        <ul>
+          <li class="nav_item" onclick="srcl('enter')">1.Введение</li>
+          <li class="nav_item" onclick="srcl('video')">2.Видео-урок</li>
+          <li class="nav_item" onclick="srcl('interface')">3.Интерфейс</li>
+          <li class="nav_item" onclick="srcl('test')">4.Тест</li>
+        </ul>
+      </nav>
+      <hr>
+      <h2 id="enter">Введение</h2>
       <p>
         Microsoft Word – Текстровый процессор, предназначенный для работы над
         различными текстовыми документами. Первый выпуск программы состоялся в
@@ -38,7 +49,13 @@
       <img src="../../assets/word_img.png" alt="" width="50%" onclick="openPopUpImage('../../assets/word_img.png')" />
 
       <hr />
-
+      <h2 id="video">Видео-урок</h2>
+      <iframe src="https://www.youtube.com/embed/OhKw2Jq5R2A?si=Dy-92n39fu64emL-"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+      <hr>
+      <h2 id="interface">Интерфейс</h2>
       <p>
         Интерфейс всех программ из пакета MS Office очень похож, что делает
         переход от одной программе к другой более удобным. Основным элементов
@@ -137,7 +154,7 @@
       <hr />
 
       <section class="test">
-        <p>Тест</p>
+        <h2 id="test">Тест</h2>
 
         <div class="test_container">
           <p>Какой компонент интерфейса содержит большую часть команд?</p>
@@ -234,9 +251,11 @@
       </section>
 
       <article class="lessons_link">
-        <a href="./lesson_3.html">Следующий урок. Microsoft PowerPoint</a>
+        <a href="./lesson_3.html">Следующий урок. Microsoft Excel</a>
       </article>
+      
     </section>
+    <div id="up"><img src="../../assets/arrowUp.png" alt="Наверх"></div>
   </main>
   <script src="../../script.js"></script>
 </body>

@@ -52,7 +52,7 @@ function test() {
         true_answers.push(item);
         resultTexts.push(textItem);
     }
-    
+
     for (let i = 0; i < true_answers.length; i++) {
         if (true_answers[i].checked) {
             resultTexts[i].style.display = 'block';
@@ -62,10 +62,42 @@ function test() {
         } else {
             resultTexts[i].style.display = 'block';
             resultTexts[i].innerHTML = 'Ответ не верный!';
-            resultTexts[i].style.color ='red';
+            resultTexts[i].style.color = 'red';
         }
     }
     pointsP.style.display = 'block';
     pointsP.innerHTML = `Итог: ${points}/5`;
     btn.style.display = 'none';
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    const backToTop = document.getElementById("up");
+
+    // Показать/скрыть кнопку при прокрутке страницы
+    window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 300) {
+            //   backToTop.style.display = "block";
+            backToTop.style.opacity = 1;
+        } else {
+            backToTop.style.opacity = 0;
+            // backToTop.style.display = "none";
+        }
+    });
+
+    // Плавная прокрутка при клике на кнопку
+    backToTop.addEventListener("click", function (event) {
+        event.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+});
+
+
+
+function srcl(elemId) {
+    let item = document.getElementById(elemId);
+    if (item) {
+        item.scrollIntoView({behavior: 'smooth', block: 'start'});
+    } else {
+        console.log(".i.")
+    }
 }
