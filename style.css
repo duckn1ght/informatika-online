@@ -246,6 +246,10 @@ hr {
   .chapterBlock--reverse .lessonsList {
     text-align: start;
   }
+  .pop_up_about {
+    width: 80vw; 
+    height: 250px;
+  }
 }
 @media (max-width: 400px) {
   header {
