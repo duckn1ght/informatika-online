@@ -3,14 +3,12 @@ function openPopUpAbout() {
     let popupAbout = document.querySelector('.pop_up_about');
     popup.style.display = 'flex';
     popupAbout.style.display = 'flex';
-    // main.style.overflow = 'hidden';
 }
 function closePopUpAbout() {
     let popup = document.querySelector('.pop_up');
     let popupAbout = document.querySelector('.pop_up_about');
     popup.style.display = 'none';
     popupAbout.style.display = 'none';
-    // main.style.overflow = 'auto';
 }
 function openPopUpEdit() {
     let popup = document.querySelector('.pop_up');
@@ -98,6 +96,6 @@ function srcl(elemId) {
     if (item) {
         item.scrollIntoView({behavior: 'smooth', block: 'start'});
     } else {
-        console.log(".i.")
+        console.log("error");
     }
 }
